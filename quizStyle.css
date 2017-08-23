@@ -1,0 +1,10 @@
+.question, #quizEnd { display: none }
+
+.rightAnswerRevealed { color: white; background-color: green }
+.wrongAnswerRevealed { color: white; background-color: red }
+
+@media print {
+  .rightAnswerRevealed, .wrongAnswerRevealed { color: black; background-color: white }
+  .rightAnswerRevealed { font-weight: bold; text-decoration: underline }
+  .wrongAnswerRevealed { text-decoration: line-through }
+}
