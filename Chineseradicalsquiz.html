@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chinese radicals quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="A 5-question quiz on Chinese character (kanji) radicals to demonstrate a quiz framework that does not require changes to the JavaScript." />
+<link rel="stylesheet" type="text/css" href="css/quizStyle.css" />
+<style type="text/css"><!--
+  #nextQuestionButton { margin-left: 200px }
+  .bigKanji { font-size: 144pt; margin-top: -0.25em; padding: 20px; float: left }
+  @media only screen and (max-width: 360px) {
+    .bigKanji { font-size: 72pt; padding: 5px }
+  }
+// --></style>
+<script type="text/javascript" src="javascript/quizOper.js"></script>
+
+</head>
+
+<body onload="quizInitialize();">
+
+<div id="blackHeader">
+
+<h1>Chinese radicals quiz</h1>
+
+<p><span style="font-weight: bold; color: red">WARNING:</span> If you don't see any Chinese or Japanese characters (&#x6F22;&#x5B57;) on this page, don't take the quiz. Your system might not have the proper fonts.</p>
+
+</div>
+
+<div id="quiz">
+
+  <div class="question">
+
+    <div class="bigKanji">&#x5C71;</div>
+    <div class="questionText">
+
+      <p>What does this Chinese character radical mean?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Rice paddy</li>
+      <li class="rightAnswer">Mountain</li>
+      <li class="wrongAnswer">Starfleet command</li>
+      <li class="wrongAnswer">Ford F-150</li>
+    </ul>
+
+  </div>
+
+
+  <div class="question">
+
+    <div class="bigKanji">&#x6728;</div>
+    <div class="questionText">
+
+      <p>What does this Chinese character radical mean?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Stick figure</li>
+
+      <li class="wrongAnswer">Saxophone</li>
+
+      <li class="rightAnswer">Tree</li>
+      <li class="wrongAnswer">Triangle</li>
+    </ul>
+
+  </div>
+
+  <div class="question">
+
+    <div class="bigKanji">&#x76EE;</div>
+    <div class="questionText">
+
+      <p>What does this Chinese character radical mean?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="rightAnswer">Eye</li>
+
+      <li class="wrongAnswer">Sunshine<span class="afterAnswerInfo">. However, the sun character (&#x65E5;) does look very similar.</span></li>
+
+      <li class="wrongAnswer">L. L. Zamenhof</li>
+      <li class="wrongAnswer">Irrigation system</li>
+    </ul>
+
+  </div>
+
+  <div class="question">
+
+    <div class="bigKanji">&#x9F9C;</div>
+    <div class="questionText">
+
+      <p>What does this Chinese character radical mean? Hint: In simplified Chinese, the character is &#x9F9F;. And even before simplified Chinese, it was simplified to 11 strokes: &#x4E80;.</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Dragon<span class="afterAnswerInfo"> is actually a very good guess, as the dragon characters, &#x7ADC; and &#x9F8D;, are somewhat similar.</span></li>
+      <li class="wrongAnswer">Klingon proverb</li>
+      <li class="wrongAnswer">Donald Knuth<span class="afterAnswerInfo">. However, Frances Yao gave Knuth a name in Chinese in 1977: &#x9AD8;&#x5FB7;&#x7EB3;.</span></li>
+      <li class="rightAnswer">Turtle</li>
+    </ul>
+
+  </div>
+
+  <div class="question">
+
+    <div class="bigKanji">&#x6B6F;</div>
+    <div class="questionText">
+
+      <p>What does this Chinese character radical mean? Hint: In simplified Chinese, the character is &#x9F7F;.</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Dentist<span class="afterAnswerInfo"> is a very good guess, but you might need more characters: &#x6B6F;&#x533B;&#x8005;.</span></li>
+
+      <li class="wrongAnswer">Panama canal</li>
+
+      <li class="wrongAnswer">Young samurai warrior</li>
+      <li class="rightAnswer">Tooth</li>
+    </ul>
+
+  </div>
+
+  <div id="quizEnd">
+    <h2>You got <span id="finalScore"></span> right out of <span id="finalTotal"></span> total</h2>
+    <p>Now you can <button onclick="reviewAnswers()">review your answers</button>, or you can go back to <a href="index.html">my portfolio projects listing page</a>.</p>
+    <p>Or maybe you'd like to take another quiz, such as the <a href="movieactorsbyrealliferoles.html">the movie actors by real life r&ocirc;les quiz (10 questions)</a>.</p>
+    <p>If you choose to review your answers, note that you can print out the quiz in black and white; I have taken care to put in a couple of print media declarations in the style sheet.</p>
+  </div>
+
+
+  <div id="status">
+
+    <p><span id="answerRightOrWrong"></span> Question <span id="currQuestionNumber"></span>/<span id="totalNumberOfQuestions"></span>. Score: <span id="score"></span>.</p>
+
+    <button id="nextQuestionButton" disabled>Next Question</button>
+
+  </div>
+
+</div>
+
+</body>
+</html>
