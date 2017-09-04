@@ -1,4 +1,4 @@
-var currQuestion, questionTotal, score;
+var currQuestion, questionTotal, skippedQuestionsCount, score;
 var questions, currAnswerList, currAnswers, currAnswerTotal, currQuestionDisplay, questionTotalDisplay, nextQuestionBtn;
 
 function assessAnswer() {
@@ -54,8 +54,9 @@ function quizConclude() {
     finalScoreString = finalScoreString.substr(0, finalScoreString.length - 1)
   }
   document.getElementById("finalScore").innerText = finalScoreString;
-  document.getElementById("finalTotal").innerText = questionTotal;
-  document.getElementById("quizEnd").style.display = "initial"
+  document.getElementById("finalTotal").innerText = questionTotal - skippedQuestionsCount;
+  document.getElementById("quizEnd").style.display = "initial";
+  document.getElementById("status").style.display = "none"
 }
 
 function proceedToNextQuestion() {
@@ -69,6 +70,11 @@ function proceedToNextQuestion() {
   }
 }
 
+function skipQuestion() {
+  skippedQuestionsCount++;
+  proceedToNextQuestion()
+}
+
 function quizInitialize() {
 
   questions = document.getElementsByClassName("question");
@@ -80,6 +86,7 @@ function quizInitialize() {
 
   currQuestion = 0;
   questionTotal = questions.length;
+  skippedQuestionsCount = 0;
   score = 0;
 
   nextQuestionBtn.addEventListener("click", proceedToNextQuestion);
