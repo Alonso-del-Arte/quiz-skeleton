@@ -1,9 +1,11 @@
 .question, #quizEnd { display: none }
 
-.wrongAnswer .afterAnswerInfo { display: none }
+.wrongAnswer .afterAnswerInfo, .rightAnswer .afterAnswerInfo { display: none }
 .rightAnswerRevealed { color: white; background-color: green }
+.rightAnswerRevealed:before { content: "\2714" }
 .wrongAnswerRevealed { color: white; background-color: red }
-.wrongAnswerRevealed .afterAnswerInfo { display: initial }
+.wrongAnswerRevealed:before { content: "\274C" }
+.wrongAnswerRevealed .afterAnswerInfo, .rightAnswerRevealed .afterAnswerInfo { display: initial }
 
 @media print {
   .rightAnswerRevealed, .wrongAnswerRevealed { color: black; background-color: white }
