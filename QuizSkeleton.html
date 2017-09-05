@@ -1,95 +1,59 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
 <title>Quiz Skeleton</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="description" content="A skeleton for an interactive quiz that can be customized with fewer or more questions without having to make changes to the existing JavaScript." /><link rel="stylesheet" type="text/css" href="css/quizStyle.css" />
 <script type="text/javascript" src="javascript/quizOper.js"></script>
-
 </head>
-
 <body onload="quizInitialize();">
 
-
-
 <h1>Quiz Skeleton</h1>
-
-
 
 <div id="quiz">
 
   <!-- TO ADD MORE QUESTIONS TO THE QUIZ, COPY AND PASTE THE FOLLOWING AS MANY TIMES AS NEEDED -->
   <div class="question">
-
     <div class="questionText">
-
       <p>Question text goes here? For this first sample question, the correct answer is #4.</p>
-
     </div>
-
     <ul class="answerList">
       <li class="wrongAnswer">Multiple choice answer 1</li>
-
       <li class="wrongAnswer">Multiple choice answer 2</li>
-
       <li class="wrongAnswer">Multiple choice answer 3</li>
       <li class="rightAnswer">Multiple choice answer 4</li>
       <!-- TO ADD MORE ANSWERS TO A QUESTION
- ADD MORE LIST ITEMS (li). JUST MAKE SURE ONLY ONE ANSWER HAS CLASS rightAnswer AND ALL THE REST HAVE CLASS wrongAnswer. -->
+ ADD MORE LIST ITEMS (li). JUST MAKE SURE ONLY ONE ANSWER HAS CLASS rightAnswer AND ALL THE REST HAVE CLASS wrongAnswer. IF YOU NEED TO ALLOW ONE OR MORE QUESTIONS TO BE SKIPPED USE THE FOLLOWING li ON EACH QUESTION THAT MAY BE SKIPPED. OTHERWISE DELETE IT. -->
+      <li class="skipQuestion">Pass</li>
     </ul>
-
+    <!--  -->
   </div>
   <!-- END OF SECTION TO COPY AND PASTE TO ADD QUESTIONS TO QUIZ -->
 
-
-
   <div class="question">
-
     <div class="questionText">
-
       <p>Question text goes here? Now #2 is the right answer.</p>
-
     </div>
-
     <ul class="answerList">
-
       <li class="wrongAnswer">Multiple choice answer 1</li>
-
       <li class="rightAnswer">Multiple choice answer 2</li>
-
       <li class="wrongAnswer">Multiple choice answer 3</li>
-
       <li class="wrongAnswer">Multiple choice answer 4</li>
-
     </ul>
-
   </div>
 
-
-
   <div class="question">
-
     <div class="questionText">
-
-      <p>Question text goes here?</p>
-
+      <p>Question text goes here? Now the correct answer is #1. If you didn't click the Pass button on the first question, please click it this time around, otherwise don't.</p>
     </div>
-
     <ul class="answerList">
-
       <li class="rightAnswer">Multiple choice answer 1</li>
-
       <li class="wrongAnswer">Multiple choice answer 2</li>
-
       <li class="wrongAnswer">Multiple choice answer 3</li>
-
       <li class="wrongAnswer">Multiple choice answer 4</li>
-
+      <li class="skipQuestion">Pass</li>
     </ul>
-
   </div>
 
 
@@ -100,19 +64,12 @@
     <p>Now you can <button onclick="reviewAnswers()">review your answers</button>, or you can go back to the <a href="index.html">home page</a>.</p>
   </div>
 
-
   <div id="status">
-
     <p><span id="answerRightOrWrong"></span> Question <span id="currQuestionNumber"></span>/<span id="totalNumberOfQuestions"></span>. Score: <span id="score"></span>.</p>
-
     <button id="nextQuestionButton" disabled="true">Next Question</button>
-
   </div>
 
 </div>
 
-
-
 </body>
-
 </html>
