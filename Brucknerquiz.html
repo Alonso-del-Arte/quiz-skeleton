@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quiz: 20 Questions About Anton Bruckner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="A 20-question quiz on the compositions of Anton Bruckner. This page demonstrates a quiz framework that does not require changes to the JavaScript." />
+<link rel="stylesheet" type="text/css" href="css/quizStyle.css" />
+<style type="text/css"><!--
+
+  #quizHeader { font-family: "Palatino Nova", Palatino, "Palatino Linotype", "Book Antiqua", serif; padding: 0.5em 2em; background-color: #f0f0f0 }
+
+  @media only screen and (max-width: 360px) {
+    #quizHeader { padding: 5px }
+    #quizHeader h1 { line-height: 1em; margin-top: 0; margin-bottom: 0 }
+    #quizHeader p { line-height: 1em; margin-top: 0 }
+  }
+
+// --></style>
+<script type="text/javascript" src="javascript/quizOper.js"></script>
+<!-- VexFlow Compiled Source -->
+<script src="http://www.vexflow.com/build/vexflow/vexflow-debug.js"></script>
+<script src="http://www.vexflow.com/vextab/support/vexflow-min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://www.vexflow.com/support/tabdiv-debug.js"></script>
+</head>
+<body onload="quizInitialize();">
+
+<div id="quizHeader">
+
+<h1>Quiz: 20 Questions About Anton Bruckner</h1>
+
+<p>Born in Austria in 1824 and died in 1896, the music of Anton Bruckner lives on.</p>
+
+</div>
+
+
+<div id="quiz">
+
+  <div class="question">
+    <div class="questionText">
+      <p>Bruckner's Mass in D minor is sometimes said to be his Mass No. 1. However, he had written at least one full setting of the Mass Ordinary before. Which one of these is it?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Symphony of Psalms</li>
+      <li class="rightAnswer">Missa Solemnis in B-flat minor, WAB 29</li>
+      <li class="wrongAnswer">Missa Solemnis in D major, Opus 123<span class="afterAnswerInfo"> is by Ludwig van Beethoven.</span></li>
+      <li class="wrongAnswer">St. Francis Mass<span class="afterAnswerInfo"> is by Michael Haydn.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Bruckner's Mass in E minor is somewhat unique in Bruckner's oeuvre specifically and in the repertoire in general because it omits which instruments?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Oboes<span class="afterAnswerInfo"> are definitely included in the E minor Mass, as they are in the Missa Sancti Hieronymi by Michael Haydn and the Mass in B-flat major by Georg Druschetzky.</span></li>
+      <li class="wrongAnswer">Tromboon and lasso d'amore</li>
+      <li class="wrongAnswer">Vibraphone and suspended cymbal<span class="afterAnswerInfo"> are instruments Bruckner never wrote for.</span></li>
+      <li class="rightAnswer">Strings</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Near the end of the Credo of his Mass in F minor, Bruckner repeats a word from the beginning of the Credo. Which word?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="rightAnswer">"Credo"</li>
+      <li class="wrongAnswer">"Unum"</li>
+      <li class="wrongAnswer">"Hominibus"<span class="afterAnswerInfo"> is from the Gloria text.</span></li>
+      <li class="wrongAnswer">"Aeternum"<span class="afterAnswerInfo"> is from the Te Deum text.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>"Locus" in the lyrics of "Locus iste," a motet by Anton Bruckner, refers to a specific location. Which location is it?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">The private residence of Pope Francis</li>
+      <li class="rightAnswer">A chapel at Linz cathedral</li>
+      <li class="wrongAnswer">Domkirche St. Stephan zu Wien</span></li>
+      <li class="wrongAnswer">M&eacute;rida Cathedral, the oldest cathedral in Mexico<span class="afterAnswerInfo">, though this is perhaps a place Bruckner would have liked to have visited.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Bruckner never actually called his Symphony in D minor of the late 1860s "die Nullte." Which German words did Bruckner write on the score?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">"Schularbeit"<span class="afterAnswerInfo"> meaning "homework," as in for school, would have been more appropriate for the Study Symphony in F minor.</span></li>
+      <li class="rightAnswer">"ungiltig ... ganz nichtig ... annulirt"<span class="afterAnswerInfo"> meaning "not valid, completely void, nullified."</span></li>
+      <li class="wrongAnswer">"Fahrvergn&uuml;gen"</li>
+      <li class="wrongAnswer">"Rindfleischetikettierungs&uuml;ber&shy;wachungs&shy;aufgaben&uuml;ber&shy;tragungs&shy;gesetz"<span class="afterAnswerInfo"> is a word which no German or Austrian in Bruckner's time would have ever come across. For that matter, very few Germans in our time would have much reason to use it.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Bruckner's Second Symphony is famous for an element of musical rhetoric which gave this Symphony its nickname. What element is that?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Rhythmically displaced cymbal clashes</li>
+      <li class="rightAnswer">Pauses<span class="afterAnswerInfo">, earning it the nickname "Pausensymphonie."</span></li>
+      <li class="wrongAnswer">Reversing the order of subject groups in the recapitulation<span class="afterAnswerInfo">. This is called "tragic sonata form," and Bruckner uses it in the finale of the Seventh Symphony.</span></li>
+      <li class="wrongAnswer">Gradually accelerating from a very slow tempo to a very fast tempo</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>In the finale of the Fifth Symphony, Bruckner emulates Beethoven in which way?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="rightAnswer">By recalling themes from previous movements like in Beethoven's Ninth</li>
+      <li class="wrongAnswer">By using flute, oboe and clarinet to emulate the sounds of nightingale, quail and cuckoo, like in Beethoven's Sixth</li>
+      <li class="wrongAnswer">By writing a fat hook to an otherwise formulaic song for boy band<span class="afterAnswerInfo">. Do note that Bruckner achieved some renown with music for men's choir, which is now mostly forgotten outside Germany and Austria.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>In 1868, Bruckner moved to Vienna, so to call the 1877 version of his First Symphony the "Linz" version is somewhat of a misnomer. In what year did Bruckner complete the very first version of the First?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">1835<span class="afterAnswerInfo">. Bruckner was a genius, but he was no W&uuml;nderkind.</span></li>
+      <li class="rightAnswer">1866</li>
+      <li class="wrongAnswer">1891<span class="afterAnswerInfo"> was the year of what we now call the "Vienna" version.</span></li>
+      <li class="wrongAnswer">2013</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>The standard string quartet consists of two violins, viola and cello. But the string quintet has at least two different configurations in the core repertoire. Which instrument did Bruckner add to the string quartet for his String Quintet in F major?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">A third violin</li>
+      <li class="rightAnswer">A second viola<span class="afterAnswerInfo">, just like Michael Haydn, Wolfgang Amadeus Mozart, Beethoven and Brahms. And sometimes Boccherini.</span></li>
+      <li class="wrongAnswer">A second cello<span class="afterAnswerInfo"> is what Schubert, Dittersdorf and sometimes Boccherini opted for.</span></li>
+      <li class="wrongAnswer">A double bass</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>The Scherzo of Bruckner's Symphony No. 4 in E-flat major is in 2/4 time rather than the 6/8 time typically associated with which activity?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Riding a horse</li>
+      <li class="wrongAnswer">Bungee cord jumping</li>
+      <li class="rightAnswer">Hunting<span class="afterAnswerInfo">. However, do note that it is in B-flat major, like Mozart's Quartet, K. 458.</span></li>
+      <li class="wrongAnswer">Recreating mythological scenes for photographs</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Herbert von Karajan recorded all Bruckner Symphonies except the Study Symphony and No. 0. Leonard Bernstein only recorded two Bruckner Symphonies. Which two?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">No. 0 and No. 9, with finale</li>
+      <li class="rightAnswer">No. 6 and No. 9, without finale</li>
+      <li class="wrongAnswer">No. 7 and No. 8<span class="afterAnswerInfo">. However, it seems that Bernstein knew the Eighth well, going by an amusing anecdote from Henry Fogel.</span></li>
+      <li class="wrongAnswer">No. 8 and No. 9, incomplete<span class="afterAnswerInfo">. However, it seems that Bernstein knew the Eighth well, going by an amusing anecdote from Henry Fogel.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>The Adagio of Bruckner's Symphony No. 7 in E major marks the first time he ever used which instruments?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="rightAnswer">Wagner tubas<span class="afterAnswerInfo"> (two tenor tubas in B-flat, two bass tubas in F)</span></li>
+      <li class="wrongAnswer">Saxophones</li>
+      <li class="wrongAnswer">Cymbals and bass drum<span class="afterAnswerInfo"> he had actually written for in a March in E-flat major from 1865, though we don't know if he ever heard it performed.</span></li>
+      <li class="wrongAnswer">Harps<span class="afterAnswerInfo">, you're one Symphony too early with these.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>"Ave Maria" is a sacred text Bruckner set on three separate occasions, for different ensembles, but each time in F major. Which other composer also wrote an "Ave Maria" in F major?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Wolfgang Amadeus Mozart<span class="afterAnswerInfo"> did write an "Ave Maria" in F major, K. 554, but so did the other two.</span></li>
+      <li class="wrongAnswer">Johannes Brahms<span class="afterAnswerInfo"> did write an "Ave Maria" in F major, Opus 12, but so did the other two.</span></li>
+      <li class="wrongAnswer">August H&ouml;gn<span class="afterAnswerInfo"> did write an "Ave Maria" in F major, Opus 4, but so did the other two.</span></li>
+      <li class="rightAnswer">All of the above</li>
+      <li class="wrongAnswer">None of the above</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>This next question uses VexFlow to display musical notation. If you don't see any musical notation below, you can either try to make your best guess or skip the question with the "Pass!" option below (if you take that option, this question won't be counted against your final score). If you do see notation, the beaming is probably wrong, but the notes should be enough information to choose the right answer.</p>
+      <p>Which Te Deum motif does Bruckner use in the finale of his Ninth Symphony?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="rightAnswer"><span class="vex-tabdiv" width="700" scale="0.9" editor="false">tabstave notation=true key=C time=C tablature=false
+notes :8 C/6 G/5 G/5 C/5 C/6 G/5 G/5 C/5 | C/6 G/5 G/5 C/5 C/6 G/5 G/5 C/5 | C/6 G/5 G/5 C/5 C/6 G/5 G/5 C/5 | 
+text ++, .10, #f, #f</span><br /></li>
+      <li class="wrongAnswer"><span class="vex-tabdiv" width="700" scale="0.9" editor="false">tabstave notation=true key=C time=C tablature=false
+notes :4 G/4 | E/5 $.a>/top.$ ## :8d E/5 $.a>/top.$ :16 B/4 :8 C/5 E/5 | :4 D/5 C/5 A/4 A/4 | :4d F/5 :8 C#/5 :4 D/5 Cn/5 | C/5 B/4
+text ++, .10, #m, #f</span><br />"In Te, Domine speravi, non confundar in aeternum"<span class="afterAnswerInfo"> is a phrase Bruckner quoted in the Seventh Symphony, not the Ninth.</span></li>
+      <li class="wrongAnswer"><span class="vex-tabdiv" width="700" scale="0.9" editor="false">tabstave notation=true key=C time=C tablature=false
+notes :2 C/5 C/5 | :4d C/5 :8 C/5 :2 D/5 | :4 C/5 ## :2 ## | :8 ## C/5 D/5 :16 D/5D/5 :8 C/5 B/4 :4 C/5</span><br />"Te Deum laudamus, Te Dominum confitemur"<span class="afterAnswerInfo">. This is actually from the Te Deum by Antonio Caldara.</span></li>
+      <li class="wrongAnswer"><span class="vex-tabdiv" width="700" scale="0.9" editor="false">tabstave notation=true key=C time=C tablature=false
+notes :4 G/4 | :2 C/5 $.a>/top.$ :4 D/5 $.a>/top.$ D/5 $.a>/top.$ | :2 E/5 $.a>/top.$ E/5 $.a>/top.$ | :4 A/4 $.a>/top.$ :8 B/4 C/5 :2 D/5 $.a>/top.$ | :4 C/5 $.a>/top.$ ##</span><br />"et vitam venturi saeculi, Amen."<span class="afterAnswerInfo">. This is actually from the Mass in F minor.</span></li>
+      <li class="skipQuestion">Pass</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>"Ecce sacerdos magnus" refers to a great priest. For which great priest did Bruckner write his setting of "Ecce sacerdos magnus"?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Pope Leo XIII<span class="afterAnswerInfo"> was the pope when Bruckner wrote "Ecce sacerdos magnus," but it was not meant for him.</span></li>
+      <li class="wrongAnswer">Pope John Paul II</li>
+      <li class="rightAnswer">The Bishop of Linz</li>
+      <li class="wrongAnswer">The Archbishop of Detroit</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Bruckner greatly admired Richard Wagner. Which composition did Bruckner dedicate to the master of music drama?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer"><i>Astrid</i><span class="afterAnswerInfo"> was an opera Bruckner thought about writing, but never did.</span></li>
+      <li class="wrongAnswer">Symphony No. 2 in C minor<span class="afterAnswerInfo"> <em>could</em> have been dedicated to Wagner, but wasn't.</span></li>
+      <li class="rightAnswer">Symphony No. 3 in D 
+minor</li>
+      <li class="wrongAnswer">Symphony No. 7 in E major<span class="afterAnswerInfo"> is an homage to Wagner, but was actually dedicated to King Ludwig II of Bavaria, who was a great patron of Wagner.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>According to legend, Herbert von Karajan chose the length of the compact disc (CD) based on Beethoven's Ninth Symphony. If he had instead based it on Bruckner's Eighth Symphony, what would be the maximum duration of a standard 12cm (roughly 5") CD?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">20 minutes</li>
+      <li class="wrongAnswer">60 minutes</li>
+      <li class="wrongAnswer">74 minutes<span class="afterAnswerInfo"> is the duration that accomodates Karajan's recording of  Beethoven's Ninth from Deutsche Grammophone's Karajan Gold series.</span></li>
+      <li class="rightAnswer">More than 80 minutes<span class="afterAnswerInfo">. Karajan's shortest recording of Bruckner's Eighth was 80:30 with the Berlin Philharmonic in 1974, his longest 86:59 in 1957 with that same orchestra.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Which musical instruments mentioned in Psalm 150 does Bruckner use in his setting of that psalm?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="rightAnswer">Trumpets or trombones<span class="afterAnswerInfo">&mdash;we can debate which was meant by the author or by the translator, but they're both included in Bruckner's setting&mdash;</span> and stringed instruments</li>
+      <li class="wrongAnswer">Psaltery and harp</li>
+      <li class="wrongAnswer">Loud cymbals, high sounding<span class="afterAnswerInfo">, that is how they're described in 150:5, King James Version, but either way, Bruckner does not use them.</span></li>
+      <li class="wrongAnswer">Tambourines</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Despite his high reputation as a composer of music for men's choir, <i>Helgoland</i> is the only such composition Bruckner thought worth bequeathing to the Austrian National Library.</p>
+      <p><i>Helgoland</i>, written in 1893, commemorates the 1890 return of the island Helgoland to Germany from which country?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Denmark<span class="afterAnswerInfo"> did possess Helgoland for almost a century, but ceded it to the British in 1814.</span></li>
+      <li class="wrongAnswer">Mexico</li>
+      <li class="rightAnswer">Britain</li>
+      <li class="wrongAnswer">The United States of America</li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div class="question">
+    <div class="questionText">
+      <p>Although Bruckner did not live to complete his Ninth Symphony, he did get a lot of work done on the finale. Which conductor has NOT recorded anything of the finale?</p>
+    </div>
+
+    <ul class="answerList">
+      <li class="wrongAnswer">Gerd Schaller<span class="afterAnswerInfo"> has not only recorded the William Carragan completion, but his <em>own</em> completion as well.</span></li>
+      <li class="rightAnswer">Herbert von Karajan</li>
+      <li class="wrongAnswer">Eliahu Inbal<span class="afterAnswerInfo"> recorded one of the early completions by Samale and Mazzuca.</span></li>
+      <li class="wrongAnswer">Nikolaus Harnoncourt<span class="afterAnswerInfo"> has not recorded any <em>completion</em>, but he has recorded the original material available in 2002.</span></li>
+    </ul>
+
+    <hr />
+  </div>
+
+  <div id="quizEnd">
+    <h2>You got <span id="finalScore"></span> right out of <span id="finalTotal"></span> total</h2>
+    <p>Now you can <button onclick="reviewAnswers()">review your answers</button>, or you can go back to <a href="index.html">quiz framework documentation</a>.</p>
+    <p>This quiz was created by Alonso Delarte, author of <a href="https://www.smashwords.com/books/view/86856" target="_blank"><i>The 20 Crucial Compositions of Anton Bruckner</i></a>, using the HTML/CSS/JavaScript framework he created for quizzes anyone can customize without knowing JavaScript. Some of the material was verified with <a href="https://www.abruckner.com/discography/" target="_blank">John Berky's Bruckner discography</a>.</p>
+    <p>If you like, you can take the <a href="Chineseradicalsquiz.html">the Chinese radicals quiz (5 questions)</a> or the <a href="movieactorsbyrealliferoles.html">Movie actors by real life r&ocirc;les quiz</a> (10 questions)?</p>
+    <p>If you choose to review your answers, note that you can print out the quiz in black and white; I have taken care to put in a couple of print media declarations in the style sheet.</p>
+  </div>
+
+  <div id="status">
+
+    <p><span id="answerRightOrWrong"></span> Question <span id="currQuestionNumber"></span>/<span id="totalNumberOfQuestions"></span>. Score: <span id="score"></span>.</p>
+
+    <button id="nextQuestionButton" disabled>Next Question</button>
+
+    <p>Quiz requires JavaScript but does not work in Internet Explorer. VexFlow for musical notation is recommended but not required.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
