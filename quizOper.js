@@ -1,9 +1,13 @@
-var currQuestion, questionTotal, score;
+var currQuestion, questionTotal, skippedQuestionsCount, score;
 var questions, currAnswerList, currAnswers, currAnswerTotal, currQuestionDisplay, questionTotalDisplay, nextQuestionBtn;
 
 function assessAnswer() {
   for (var i = 0; i < currAnswerTotal; i++) {
     currAnswers[i].removeEventListener("click", assessAnswer)
+  }
+  if (this.className == "skipQuestion") {
+    skippedQuestionsCount++;
+    this.className = "questionSkipped"
   }
   if (this.className == "wrongAnswer") {
     this.className = "wrongAnswerRevealed";
@@ -49,13 +53,18 @@ function showNextQuestion() {
 }
 
 function quizConclude() {
+
   var finalScoreString = score + " questions";
+
   if (score == 1) {
     finalScoreString = finalScoreString.substr(0, finalScoreString.length - 1)
   }
+
   document.getElementById("finalScore").innerText = finalScoreString;
-  document.getElementById("finalTotal").innerText = questionTotal;
-  document.getElementById("quizEnd").style.display = "initial"
+  document.getElementById("finalTotal").innerText = questionTotal - skippedQuestionsCount;
+  document.getElementById("quizEnd").style.display = "initial";
+  document.getElementById("status").style.display = "none"
+
 }
 
 function proceedToNextQuestion() {
@@ -80,6 +89,7 @@ function quizInitialize() {
 
   currQuestion = 0;
   questionTotal = questions.length;
+  skippedQuestionsCount = 0;
   score = 0;
 
   nextQuestionBtn.addEventListener("click", proceedToNextQuestion);
@@ -88,7 +98,7 @@ function quizInitialize() {
 }
 
 function reviewAnswers() {
-  for (var i = 0; i < questionTotal; i++) {
-    questions[i].style.display = "initial";
+  for (var j = 0; j < questionTotal; j++) {
+    questions[j].style.display = "initial";
   }
 }
