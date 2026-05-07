@@ -1,3 +1,8 @@
+/**
+ * Quiz operation framework
+ * Copyright (C) 2017 Alonso del Arte
+ */
+
 var currQuestion, questionTotal, skippedQuestionsCount, score;
 var questions, currAnswerList, currAnswers, currAnswerTotal, currQuestionDisplay, questionTotalDisplay, nextQuestionBtn;
 
